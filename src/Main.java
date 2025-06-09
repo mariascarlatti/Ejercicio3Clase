@@ -49,6 +49,19 @@ public class Main {
                     System.out.println("Resultado: " + operations.multiply(num5, num6));
                     menu();
                     break;
+                case 4:
+                    System.out.println("Seleccionó Dividir");
+                    System.out.print("Ingrese el primer número: ");
+                    int num7 = Integer.parseInt(scanner.nextLine());
+                    System.out.print("Ingrese el segundo número: ");
+                    int num8 = Integer.parseInt(scanner.nextLine());
+                    if (num8 == 0) {
+                        System.out.println("Error: División por cero no permitida.");
+                    } else {
+                        System.out.println("Resultado: " + operations.divide(num7, num8));
+                    }
+                    menu();
+                    break;
                 case 5:
                     System.out.println("Saliendo de la calculadora. ¡Hasta luego!");
                     return;
