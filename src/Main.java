@@ -14,7 +14,8 @@ public class Main {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
-        System.out.println("5. Salir");
+        System.out.println("5. Elevar al cuadrado");
+        System.out.println("6. Salir");
 
         System.out.print("Seleccione una opción: ");
 
@@ -63,6 +64,13 @@ public class Main {
                     menu();
                     break;
                 case 5:
+                    System.out.println("Seleccionó Calcular el cuadrado de un número");
+                    System.out.print("Ingrese el número: ");
+                    int num9 = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Resultado: " + operations.cuadrado(num9));
+                    menu();
+                    break;
+                case 6:
                     System.out.println("Saliendo de la calculadora. ¡Hasta luego!");
                     return;
                 default:
