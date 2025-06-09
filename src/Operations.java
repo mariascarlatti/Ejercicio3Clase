@@ -16,4 +16,8 @@ public class Operations {
         return a / b;
     }
 
+    public int cuadrado(int a) {
+        return a * a;
+    }
+
 }
