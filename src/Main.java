@@ -31,6 +31,15 @@ public class Main {
                     System.out.println("Resultado: " + operations.sum(num1, num2));
                     menu();
                     break;
+                case 2:
+                    System.out.println("Seleccionó Restar");
+                    System.out.print("Ingrese el primer número: ");
+                    int num3 = Integer.parseInt(scanner.nextLine());
+                    System.out.print("Ingrese el segundo número: ");
+                    int num4 = Integer.parseInt(scanner.nextLine());
+                    System.out.println("Resultado: " + operations.subtract(num3, num4));
+                    menu();
+                    break;
                 default:
                     System.out.println("Opción no válida. Por favor, intente de nuevo.");
                     menu();
