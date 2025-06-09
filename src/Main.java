@@ -49,6 +49,9 @@ public class Main {
                     System.out.println("Resultado: " + operations.multiply(num5, num6));
                     menu();
                     break;
+                case 5:
+                    System.out.println("Saliendo de la calculadora. ¡Hasta luego!");
+                    return;
                 default:
                     System.out.println("Opción no válida. Por favor, intente de nuevo.");
                     menu();
